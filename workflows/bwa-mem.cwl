@@ -2,6 +2,11 @@ cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: [bwa, mem]
 inputs:
+  minimumScore:
+    type: int?
+    inputBinding:
+      prefix: -T
+      position: 1
   reference:
     type: File
     secondaryFiles:
@@ -11,15 +16,15 @@ inputs:
         - .pac
         - .sa
     inputBinding:
-      position: 1
+      position: 2
   fastq1:
     type: File
     inputBinding:
-      position: 2
+      position: 3
   fastq2:
     type: File
     inputBinding:
-      position: 3
+      position: 4
   output:
     type: string
 outputs:
