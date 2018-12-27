@@ -1,0 +1,12 @@
+ReferenceGenome:
+  class: File
+  path: /home/ec2-user/environment/mutfilt_test/GRCh37.fa
+Fastq1:
+  class: File
+  path: /home/ec2-user/environment/dna_alignment/input/5929_tumor/sequence1.fastq
+Fastq2:
+  class: File
+  path: /home/ec2-user/environment/dna_alignment/input/5929_tumor/sequence2.fastq
+BwaOutFile: bwa_out.sam
+SamblasterOutFile: samblaster_out.sam
+
